@@ -24,18 +24,18 @@ $error_message = User::handleProfileUpdate($db, $user_id);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Личный кабинет</title>
-    <meta name="description" content="Календарь-планировщик с событиями и задачами для организации вашего времени">
-    <meta name="keywords" content="планировщик, календарь, задачи, события, организация времени">
+    <meta name="description" content="Страница профиля пользователя системы YouProject">
     
-    <!-- Open Graph разметка для соцсетей -->
-    <meta property="og:title" content="Планировщик задач и событий | YouProject">
-    <meta property="og:description" content="Календарь-планировщик с событиями и задачами для организации вашего времени">
+    <!-- Open Graph разметка -->
+    <meta property="og:title" content="Профиль пользователя | YouProject">
+    <meta property="og:description" content="Управление профилем пользователя системы YouProject">
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?= 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>">
-    <!-- Здесь нужно указать путь к изображению для превью -->
     
-    <!-- Каноническая ссылка для избежания дублирования контента -->
+    <!-- Каноническая ссылка -->
     <link rel="canonical" href="<?= 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>">
+    
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 <body>
     <?php if (isset($error_message)): ?>
